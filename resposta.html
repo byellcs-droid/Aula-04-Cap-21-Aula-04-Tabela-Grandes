@@ -2,8 +2,10 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas</title>
+    <title>Tabelas Grandes</title>
+
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -19,15 +21,15 @@
             padding: 10px;
         }
         thead, tfoot {
-            background-color: rgb(248, 247, 247);
-            color: rgb(10, 10, 10);
+            background-color: rgb(248, 246, 246);
+            color: rgb(15, 15, 15);
         }
 
         thead > tr > th {
             /* No título da linha do cabeçalho vou grudar "sticky" */
             position: sticky; /* grudar */
             top: 0; /* na posição 0 */
-            background-color: rgb(253, 252, 252);
+            background-color: rgb(250, 248, 248);
 
         }
         td.num {
@@ -41,7 +43,7 @@
             /* Para deixar mais espaçado */
             padding: 10px;
             /* Colocar um fundo no meu caption */
-            background-color: lightgray;
+            background-color: rgb(248, 245, 245);
 
         }
         /* Efeito Zebra
@@ -64,26 +66,15 @@
             }
         */
         /* tbody > tr:nth-child(2n) {
-            background-color: rgb(252, 251, 251);
+            background-color: gray;
 
         } */
     </style>
 </head>
 <body>
-    <h1>Uso de tabelas grandes</h1>
-    <!-- Anatomia para tabelas grandes 
-        Table
-            Caption - Legenda da tabela
-            Thead - cabeça
-                TR, TD, TH
-            Tbody - corpo
-                TR, TD, TH
-            Tfoot - pé 
-                TR, TD, TH
-    -->
     <table>
         <caption>
-            População das Unidades Federativas
+            População dos Estados Brasileiros - 2024
         </caption>
         <thead>
             <tr>
@@ -98,39 +89,82 @@
         </thead>
         <tbody>
             <tr>
-                <td>São Paulo</td>
-                <td class="num">45.973.190</td>
+                <td>Acre</td>
+                <td class="num">830.018</td>
             </tr>
             <tr>
-                <td>Minas Gerais</td>
-                <td class="num">21.322.692</td>
+                <td>Alagoas</td>
+                <td class="num">3.365.351</td>
             </tr>
             <tr>
-                <td>Rio de Janeiro</td>
-                <td class="num">17.219.679</td>
+                <td>Amapá</td>
+                <td class="num">877.613</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.269.995</td>
             </tr>
             <tr>
                 <td>Bahia</td>
-                <td class="num">14 850 513</td>
+                <td class="num">14.141.626</td>
             </tr>
             <tr>
-                <td>Paraná</td>
-                <td class="num">11 824 665</td>
+                <td>CE</td>
+                <td class="num">9.240.580</td>
             </tr>
             <tr>
-                <td>Rio Grande do Sul</td>
-                <td class="num">11 229 915</td>
+                <td><strong>Distrito Federal</strong></td>
+                <td class="num">3.098.883</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="num">4.108.508</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.206.589</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6.775.805</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">7.206.589</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.059.905</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.281.480</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.054.524</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1.616.379</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">636.707</td>
+            </tr>
+            <tr>
+                <td>TO</td>
+                <td class="num">1.607.363</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th scope="row">Total de Habitantes</th>
-                <td class="num"><strong>122.420.654</strong></td>
+                <th scope="row">Total da população estimada</th>
+                <td class="num"><strong>Soma Total</strong></td>
             </tr>
 
         </tfoot>
 
     </table>
-        
 </body>
 </html>
